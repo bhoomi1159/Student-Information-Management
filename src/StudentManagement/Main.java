@@ -1,5 +1,3 @@
-package pravtice;
-
 import java.util.Scanner;
 
 public class Main {
@@ -14,7 +12,7 @@ public class Main {
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();  
 
             switch (choice) {
                 case 1:
@@ -24,7 +22,7 @@ public class Main {
                     String lastName = scanner.nextLine();
                     System.out.print("Enter Age: ");
                     int age = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine();  
                     System.out.print("Enter Course: ");
                     String course = scanner.nextLine();
                     Student student = new Student(firstName, lastName, age, course);
@@ -36,14 +34,14 @@ public class Main {
                 case 3:
                     System.out.print("Enter Student ID to update: ");
                     int studentId = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine();  
                     System.out.print("Enter First Name: ");
                     firstName = scanner.nextLine();
                     System.out.print("Enter Last Name: ");
                     lastName = scanner.nextLine();
                     System.out.print("Enter Age: ");
                     age = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine(); 
                     System.out.print("Enter Course: ");
                     course = scanner.nextLine();
                     student = new Student(firstName, lastName, age, course);
